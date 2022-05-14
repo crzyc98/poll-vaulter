@@ -1,0 +1,95 @@
+<component name="ProjectCodeStyleConfiguration">
+  <code_scheme name="Project" version="173">
+    <option name="RIGHT_MARGIN" value="140" />
+    <ClojureCodeStyleSettings>{
+  :cljs.core/cond-&gt;&gt; 1
+  :cljs.core/defonce 1
+  :cljs.core/defprotocol 1
+  :cljs.core/ns 1
+  :clojure.core/cond-&gt; 1
+  :clojure.core/cond-&gt;&gt; 1
+  :clojure.core/defmulti :only-indent
+  :clojure.core/ns 1
+  :clojure.string/join 1
+  :com.rpl.specter/recursive-path :only-indent
+  :common.lambda.core/deflambda-with-common-interceptors 1
+  :conman.core/with-transaction 1
+  :cursive.formatting/align-maps false
+  :cursive.formatting/comment-align-column 40
+  :cursive.formatting/one-space-lists true
+  :devcards.core/defcard :only-indent
+  :mount.core/defstate 1
+  :om-css.core/defui 1
+  :pylon.macros/defclass 1
+  :re-frame.core/reg-cofx 1000
+  :re-frame.core/reg-event-ctx 1000
+  :re-frame.core/reg-event-db 1
+  :re-frame.core/reg-event-fx 1
+  :re-frame.core/reg-fx 1
+  :re-frame.core/reg-sub 1
+  :view.asset/if-available 1
+  :view.asset/when-available 1
+  :vimsical-ui.components.button/render 1
+  :vimsical-ui.components.button/style 1
+  :vimsical-ui.components.text-editor/render 1
+  :vimsical-ui.components.tooltip/render 1
+  :vimsical-ui.components.tooltip/style 1
+  :vimsical.components.nav/create-vims 1
+  :vimsical.components.nav/ident 1
+  :vimsical.components.nav/query 1
+  :vimsical.components.nav/render 1
+  :vimsical.components.nav/style 1
+  :vimsical.impl.ds.dll/get-head 1
+  :vimsical.impl.ds.dll/set-head 1
+  :vimsical.util.devcards/defcard-om :only-indent
+  :vimsical.util.devcards/defcard-om-ref :only-indent
+  :vimsical.util.om/defdispatch :only-indent
+  :vimsical.util.om/html 1
+  :vimsical.util.spec/defentity :only-indent
+  :vimsical.util.util/condp-&gt; :only-indent
+}</ClojureCodeStyleSettings>
+    <HTMLCodeStyleSettings>
+      <option name="HTML_SPACE_INSIDE_EMPTY_TAG" value="true" />
+      <option name="HTML_QUOTE_STYLE" value="Single" />
+      <option name="HTML_ENFORCE_QUOTES" value="true" />
+    </HTMLCodeStyleSettings>
+    <JSCodeStyleSettings version="0">
+      <option name="USE_SEMICOLON_AFTER_STATEMENT" value="false" />
+      <option name="FORCE_SEMICOLON_STYLE" value="true" />
+      <option name="SPACE_BEFORE_FUNCTION_LEFT_PARENTH" value="false" />
+      <option name="USE_DOUBLE_QUOTES" value="false" />
+      <option name="FORCE_QUOTE_STYlE" value="true" />
+      <option name="ENFORCE_TRAILING_COMMA" value="WhenMultiline" />
+      <option name="SPACES_WITHIN_OBJECT_LITERAL_BRACES" value="true" />
+      <option name="SPACES_WITHIN_IMPORTS" value="true" />
+    </JSCodeStyleSettings>
+    <TypeScriptCodeStyleSettings version="0">
+      <option name="USE_SEMICOLON_AFTER_STATEMENT" value="false" />
+      <option name="FORCE_SEMICOLON_STYLE" value="true" />
+      <option name="SPACE_BEFORE_FUNCTION_LEFT_PARENTH" value="false" />
+      <option name="USE_DOUBLE_QUOTES" value="false" />
+      <option name="FORCE_QUOTE_STYlE" value="true" />
+      <option name="ENFORCE_TRAILING_COMMA" value="WhenMultiline" />
+      <option name="SPACES_WITHIN_OBJECT_LITERAL_BRACES" value="true" />
+      <option name="SPACES_WITHIN_IMPORTS" value="true" />
+      <option name="IMPORT_SORT_MODULE_NAME" value="true" />
+    </TypeScriptCodeStyleSettings>
+    <codeStyleSettings language="HTML">
+      <option name="SOFT_MARGINS" value="140" />
+      <indentOptions>
+        <option name="CONTINUATION_INDENT_SIZE" value="4" />
+      </indentOptions>
+    </codeStyleSettings>
+    <codeStyleSettings language="JSON">
+      <indentOptions>
+        <option name="INDENT_SIZE" value="4" />
+      </indentOptions>
+    </codeStyleSettings>
+    <codeStyleSettings language="JavaScript">
+      <option name="SOFT_MARGINS" value="140" />
+    </codeStyleSettings>
+    <codeStyleSettings language="TypeScript">
+      <option name="SOFT_MARGINS" value="140" />
+    </codeStyleSettings>
+  </code_scheme>
+</component>
