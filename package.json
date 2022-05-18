@@ -16,7 +16,11 @@
     "devDependencies": {
         "@tsconfig/node16": "^1.0.2",
         "@typechain/ethers-v5": "^10.0.0",
+        "@typescript-eslint/eslint-plugin": "^5.25.0",
+        "@typescript-eslint/parser": "^5.25.0",
         "eslint": "^8.15.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.0.0",
         "prettier": "^2.6.2",
         "typechain": "^8.0.0"
     },
