@@ -1,18 +1,18 @@
-import { JsonFragment } from '@ethersproject/abi'
-import { JsonRpcProvider } from '@ethersproject/providers'
-import { Contract } from 'ethers-multicall'
-import _ from 'lodash'
-import { ChainIdKey, RPCS } from './constants.js'
-import { ERC20__factory } from './contracts/index.js'
-import { multicall } from './multicall.mjs'
+import { JsonFragment } from "@ethersproject/abi";
+import { JsonRpcProvider } from "@ethersproject/providers";
+import { Contract } from "ethers-multicall";
+import _ from "lodash";
+import { ChainIdKey, RPCS } from "./constants.js";
+import { ERC20__factory } from "./contracts/index.js";
+import { multicall } from "./multicall.mjs";
 
 export async function fetchVaultInfo(chainId: ChainIdKey, contractAddress: string, abi: JsonFragment[]) {
-    const ethersProvider = new JsonRpcProvider(RPCS[chainId])
-    const vaultContract = new Contract(contractAddress, abi)
+    const ethersProvider = new JsonRpcProvider(RPCS[chainId]);
+    const vaultContract = new Contract(contractAddress, abi);
 
-    const totalSupplyCall = vaultContract.totalSupply()
-    const collateralPriceCall = vaultContract.getEthPriceSource()
-    const collateralAddressCall = vaultContract.collateral()
+    const totalSupplyCall = vaultContract.totalSupply();
+    const collateralPriceCall = vaultContract.getEthPriceSource();
+    const collateralAddressCall = vaultContract.collateral();
 
     let [totalSupply, collateralPrice, collateralAddress] = await multicall(chainId, [
         totalSupplyCall,
@@ -60,6 +60,5 @@ export async function fetchVaultInfo(chainId: ChainIdKey, contractAddress: strin
         cdr = isNaN(cdr) ? 0 : cdr
         vaultInfo.push({ vaultIdx, tokenName, owner, cdr, collateral, debt })
     }
-    console.table(vaultInfo)
     return vaultInfo
 }
